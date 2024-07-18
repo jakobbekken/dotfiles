@@ -1,0 +1,11 @@
+#!/bin/sh
+
+filename="$HOME/.config/bspwm/scripts/layouts"
+
+if [ "$1" == "--change" ]; then
+  first_key=$(head -n 1 "$filename")
+  sed -i '1d' "$filename" && echo "$first_key" >> "$filename"
+fi
+
+current_key=$(head -n 1 "$filename")
+setxkbmap $current_key

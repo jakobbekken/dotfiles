@@ -1,0 +1,12 @@
+# Theme from: https://github.com/alacritty/alacritty-theme
+import = [
+  "~/.config/alacritty/themes/rose-pine.toml"
+]
+
+[shell]
+program = "/bin/zsh"
+
+[font]
+normal = { family = "FiraMono Nerd Font Mono", style = "Regular" }
+size = 14
+

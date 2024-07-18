@@ -1,0 +1,8 @@
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+alias ls="eza --icons=always"
+alias la="eza --icons=always -a"
+
+alias :q="exit"
+
+export LS_COLORS="di=35"
